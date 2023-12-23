@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+img{
+  height: 130px;
+}
+
+li{
+  margin: 10px;
+  font-weight: bolder;
+}
+
+.navbar-nav .nav-item.dropdown:hover .nav-link,
+.navbar-nav .nav-item.dropdown:focus .nav-link {
+    color: black !important;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+}
+
+.dropdown-item{
+  font-weight: bold;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: orange !important;
+    font-weight: bold;
+}
+.custom-width {
+  width: 150px;
+  height: 43px;
+  border-radius: 62px;
+  font-weight: bold;
+}
+
+
+.img1{
+  background-image: url('./images/1.png');
+}
+
+.img2{
+  background-image: url('./images/2.png');
+}
+
+.img3{
+  background-image: url('./images/3.png');
+}
+
+
+.card{
+  /* width: 90%; */
+  margin: 0px 10px;
+  /* margin: 15px; */
+  padding: 15px;
+  /* color: white; */
+  height: 600px;
+}
+
+.card .head h6{
+  color: white;
+  font-size: 20px;
+  
+}
+
+.card .head p{
+  color: white;
+  font-size: 15px;
+}
+
+.readbtn h6 a{
+  color: white;
+  text-decoration: none;
+}
+
+.card .empty{
+  height: 600px;
+}
+
+.card .head h6{
+  margin: 15px 0px;
+}
