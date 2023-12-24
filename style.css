@@ -9,9 +9,22 @@ body {
   color: #000000;
 }
 
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+  .toggle.ios .toggle-handle { border-radius: 20px; }
+
 body.dark-mode {
   background-color: #1a1a1a;
   color: #ffffff;
+}
+
+.navbar-toggler {
+  background-color: #fff; /* Specify the background color in light mode */
+}
+
+/* Additional styles for dark mode */
+
+body.dark-mode .navbar-toggler {
+  background-color: #ffffff; /* Specify the background color in dark mode */
 }
 
 body.dark-mode .navbar-nav .nav-link {
@@ -28,17 +41,21 @@ li{
   font-weight: bold;
 }
 
+/* Original styles for light mode */
+
 .navbar-nav .nav-item.dropdown:hover .nav-link,
 .navbar-nav .nav-item.dropdown:focus .nav-link {
-    color: black !important;
+    color: white !important;
 }
 
 .dropdown-menu {
     background-color: #fff;
+    color: white !important;
 }
 
-.dropdown-item{
-  font-weight: bold;
+.dropdown-item {
+    font-weight: bold;
+    color: white !important;
 }
 
 .dropdown-item:hover,
@@ -46,6 +63,25 @@ li{
     color: orange !important;
     font-weight: bold;
 }
+
+/* Additional styles for dark mode */
+
+body.dark-mode .navbar-nav .nav-item.dropdown:hover .nav-link,
+body.dark-mode .navbar-nav .nav-item.dropdown:focus .nav-link {
+    color: #ffffff !important;
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: #1a1a1a;
+    color: #ffffff  !important;
+}
+
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .dropdown-item:focus {
+    color: orange !important;
+    font-weight: bold;
+}
+
 .custom-width {
   width: 150px;
   height: 43px;
