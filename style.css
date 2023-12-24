@@ -19,12 +19,13 @@ body.dark-mode .navbar-nav .nav-link {
 }
 
 img{
-  height: 130px;
+  width: 160px;
+  height: 40px;
 }
 
 li{
-  margin: 10px;
-  font-weight: bolder;
+  margin: 5px;
+  font-weight: bold;
 }
 
 .navbar-nav .nav-item.dropdown:hover .nav-link,
