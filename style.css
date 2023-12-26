@@ -4,13 +4,21 @@
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
 }
+
 body {
   background-color: #ffffff;
   color: #000000;
 }
 
-.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
-  .toggle.ios .toggle-handle { border-radius: 20px; }
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+  border-radius: 20px;
+}
+
+.toggle.ios .toggle-handle {
+  border-radius: 20px;
+}
 
 body.dark-mode {
   background-color: #1a1a1a;
@@ -18,68 +26,83 @@ body.dark-mode {
 }
 
 .navbar-toggler {
-  background-color: #fff; /* Specify the background color in light mode */
+  background-color: #fff;
 }
 
-/* Additional styles for dark mode */
 
 body.dark-mode .navbar-toggler {
-  background-color: #ffffff; /* Specify the background color in dark mode */
+  background-color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: #000000;
 }
 
 body.dark-mode .navbar-nav .nav-link {
-  color: #ffffff !important;
+  color: black !important;
 }
 
-img{
+body.dark-mode .navbar-nav .nav-link,
+body.dark-mode .navbar-nav .nav-item.active .nav-link {
+  color: white !important;
+}
+
+img {
   width: 160px;
   height: 40px;
 }
 
-li{
+body.dark-mode .drop:hover {
+  color: black;
+}
+
+li {
   margin: 5px;
   font-weight: bold;
 }
 
-/* Original styles for light mode */
 
 .navbar-nav .nav-item.dropdown:hover .nav-link,
 .navbar-nav .nav-item.dropdown:focus .nav-link {
-    color: white !important;
+  color: black !important;
+}
+
+body.dark-mode .navbar-nav .nav-item.dropdown:hover .nav-link,
+body.dark-mode .navbar-nav .nav-item.dropdown:focus .nav-link {
+  color: white !important;
 }
 
 .dropdown-menu {
-    background-color: #fff;
-    color: white !important;
+  background-color: #fff;
+  color: white !important;
 }
 
 .dropdown-item {
-    font-weight: bold;
-    color: white !important;
+  font-weight: bold;
+  color: black !important;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: orange !important;
-    font-weight: bold;
+  color: orange !important;
+  font-weight: bold;
 }
 
-/* Additional styles for dark mode */
 
 body.dark-mode .navbar-nav .nav-item.dropdown:hover .nav-link,
 body.dark-mode .navbar-nav .nav-item.dropdown:focus .nav-link {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 body.dark-mode .dropdown-menu {
-    background-color: #1a1a1a;
-    color: #ffffff  !important;
+  background-color: white;
+  color: #ffffff !important;
 }
 
 body.dark-mode .dropdown-item:hover,
 body.dark-mode .dropdown-item:focus {
-    color: orange !important;
-    font-weight: bold;
+  color: orange !important;
+  font-weight: bold;
 }
 
 .custom-width {
@@ -89,49 +112,96 @@ body.dark-mode .dropdown-item:focus {
   font-weight: bold;
 }
 
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
 
-.img1{
+
+.img1 {
   background-image: url('./images/1.png');
 }
 
-.img2{
+.img2 {
   background-image: url('./images/2.png');
 }
 
-.img3{
+.img3 {
   background-image: url('./images/3.png');
 }
 
-
-.card{
-  /* width: 90%; */
-  margin: 0px 10px;
-  /* margin: 15px; */
-  padding: 15px;
-  /* color: white; */
-  height: 600px;
+.active-section {
+  background-color: #CED600;
+  cursor: pointer;
 }
 
-.card .head h6{
+
+
+
+
+.card {
+  width: 90%;
+  /* Set the width of your card */
+  margin: 0 10px;
+  padding: 15px;
+  height: 700px;
+  /* Set the height of your card */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.card .head h6 {
   color: white;
   font-size: 20px;
-  
+
 }
 
-.card .head p{
+.card .head p {
   color: white;
   font-size: 15px;
 }
 
-.readbtn h6 a{
+.readbtn h6 a {
   color: white;
   text-decoration: none;
 }
 
-.card .empty{
+.card .empty {
   height: 600px;
 }
 
-.card .head h6{
+.card .head h6 {
   margin: 15px 0px;
+}
+
+.section-one {
+  background-image: url(images/img_2.png);
+  margin: 0px 10px;
+  width: 800px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.section-one .heading-one {
+  text-align: center;
+  letter-spacing: 0.9px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.btn-1 {
+  width: 186px;
+  height: 58px;
+  border-radius: 30px;
+  opacity: 1;
+}
+
+.card-one {
+  height: 130px;
+  background-color: white;
+  margin-left: 130px;
 }

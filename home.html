@@ -21,64 +21,51 @@
             integrity="sha384-b5md+CkL08JUaDpzgEw8+6tGjhOztkY+kg9QgsfZIcM4p5UmCkiXbOX7kyqO8X+L"
             crossorigin="anonymous"
         ></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <style>
-    @media (max-width: 768px) {
-  .carousel-inner .carousel-item > div {
-    display: none;
-  }
-
-  .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-start,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-/* display 4 */
-@media (min-width: 768px) {
-  .carousel-inner .carousel-item-right.active,
-.carousel-inner .carousel-item-next,
-.carousel-item-next:not(.carousel-item-start) {
-    transform: translateX(25%) !important;
-  }
-
-  .carousel-inner .carousel-item-left.active,
-.carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start,
-.carousel-item-prev:not(.carousel-item-end) {
-    transform: translateX(-25%) !important;
-  }
-
-  .carousel-item-next.carousel-item-start, .active.carousel-item-end {
-    transform: translateX(0) !important;
-  }
-
-  .carousel-inner .carousel-item-prev,
-.carousel-item-prev:not(.carousel-item-end) {
-    transform: translateX(-25%) !important;
-  }
-}
-   </style>
+                @media (max-width: 768px) {
+            .carousel-inner .carousel-item > div {
+                display: none;
+            }
+            
+            .carousel-inner .carousel-item > div:first-child {
+                display: block;
+            }
+            }
+            .carousel-inner .carousel-item.active,
+            .carousel-inner .carousel-item-start,
+            .carousel-inner .carousel-item-next,
+            .carousel-inner .carousel-item-prev {
+            display: flex;
+            }
+            
+            /* display 4 */
+            @media (min-width: 768px) {
+            .carousel-inner .carousel-item-right.active,
+            .carousel-inner .carousel-item-next,
+            .carousel-item-next:not(.carousel-item-start) {
+                transform: translateX(25%) !important;
+            }
+            
+            .carousel-inner .carousel-item-left.active,
+            .carousel-item-prev:not(.carousel-item-end),
+            .active.carousel-item-start,
+            .carousel-item-prev:not(.carousel-item-end) {
+                transform: translateX(-25%) !important;
+            }
+            
+            .carousel-item-next.carousel-item-start, .active.carousel-item-end {
+                transform: translateX(0) !important;
+            }
+            
+            .carousel-inner .carousel-item-prev,
+            .carousel-item-prev:not(.carousel-item-end) {
+                transform: translateX(-25%) !important;
+            }
+            }
+            </style>
     </head>
     <body>
+        <!-- ------------------------- navbar section ----------------------- -->
         <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary ">
             <div class="container">
                 <a class="navbar-brand">
@@ -114,7 +101,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a
-                                class="nav-link dropdown-toggle"
+                                class="drop nav-link dropdown-toggle "
                                 href="#"
                                 role="button"
                                 data-bs-toggle="dropdown"
@@ -208,7 +195,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a
-                                class="nav-link dropdown-toggle"
+                                class="drop nav-link dropdown-toggle"
                                 href="#"
                                 role="button"
                                 data-bs-toggle="dropdown"
@@ -344,23 +331,49 @@
                             <button
                                 class="custom-width btn btn-primary"
                                 type="submit"
+                                style="width: 200px; height: 50px; border-radius: 30px;"
                             >
                                 Contect Us  &nbsp;
-                                <i class="bi bi-arrow-right"></i>
+                                <img
+                                    src="images/img_50.svg"
+                                    alt
+                                    style="width: 25px; height: 12px; "
+                                >
                             </button>
                         </li>
                         <li>
                             <button
                                 id="dark-mode-toggle"
                                 class="custom-width btn btn-primary"
+                                style="width: 100px; height: 50px; border-radius: 30px;"
                             >
-                                mode
-                            </button> 
+                                <i
+                                    class="bi bi-moon"
+                                    id="moon-icon"
+                                ></i>
+                                <i
+                                    class="bi bi-sun"
+                                    id="sun-icon"
+                                ></i>
+                            </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ------------------------- card Carousel Section --------------------------- -->
         <div
             id="myCarousel"
             class="carousel slide container"
@@ -447,49 +460,845 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ----------------------------------- section Two ------------------------------- -->
+        <div class="container section-one">
+            <h3 class="heading-one">
+                One-Stop Supplier for PVC and CPVC Raw Materials.
+            </h3>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ------------------------------------- section Three ----------------------------- -->
+        <div class="container mt-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div>
+                        <h4 style="font-size: 50px; font-weight: bold;">Nishan Multitrade PVT LTD</h4>
+                        <p style="font-size: 35px; color: #CED600;  font-weight: bold;">
+                            was istablished in
+                            <span style="color: blue; font-weight: bold;">1991</span>
+                        </p>
+                        <p class="para-2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        </p>
+                        <button
+                            type="button"
+                            class="btn-1 btn-outline-warning"
+                            style="color: blue; background-color: white;"
+                        >
+                            About Us
+                            <img
+                                src="images/img_50.svg"
+                                alt
+                                style="width: 25px; height: 12px;"
+                            >
+                        </button>
+                        <div class="container mt-5">
+                            <div class="row g-5">
+                                <div
+                                    class="col-md-4"
+                                    style=" text-align: center; background-color: #CED600;"
+                                >
+                                    <img
+                                        src="images/img_4.svg"
+                                        alt
+                                        style="margin-top: 20px;"
+                                    >
+                                    <h5 style="margin-top: 20px;">Our Objectives & Values</h5>
+                                </div>
+                                <div
+                                    class="col-md-4"
+                                    style="text-align: center;"
+                                >
+                                    <img
+                                        src="images/img_5.svg"
+                                        alt
+                                        style="margin-top: 20px;"
+                                    >
+                                    <h5 style="margin-top: 20px;">Industries We Carter</h5>
+                                </div>
+                                <div
+                                    class="col-md-4"
+                                    style="text-align: center;"
+                                >
+                                    <img
+                                        src="images/img_6.svg"
+                                        alt
+                                        style="margin-top: 20px;"
+                                    >
+                                    <h5 style="margin-top: 20px;">Our Aim</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-4">
+                        <img
+                            src="images/img_3.png"
+                            alt
+                            style="width: 100%; height: 500px;"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- --------------------------------------- section Four ------------------------------ -->
+        <div class="container mt-5">
+            <h1 style="text-align: center;">
+                Our
+                <b>Distributorship</b>
+            </h1>
+
+
+
+
+
+
+
+
+
+
+            <div class="container mt-5">
+                <div class="row g-5">
+                    <div
+                        class="col-md-2"
+                        style=" text-align: center;"
+                    >
+                        <img
+                            src="images/img-7.png"
+                            alt
+                            style="width: 150px; height: 100px;"
+                        >
+                    </div>
+                    <div
+                        class="col-md-2"
+                        style=" text-align: center;"
+                    >
+                        <img
+                            src="images/img-9.png"
+                            alt
+                            style="width: 150px; height: 100px;"
+                        >
+                    </div>
+                    <div
+                        class="col-md-2"
+                        style=" text-align: center;"
+                    >
+                        <img
+                            src="images/img_10.png"
+                            alt
+                            style="width: 150px; height: 100px;"
+                        >
+                    </div>
+                    <div
+                        class="col-md-2"
+                        style=" text-align: center;"
+                    >
+                        <img
+                            src="images/img_11.png"
+                            alt
+                            style="width: 150px; height: 100px;"
+                        >
+                    </div>
+                    <div
+                        class="col-md-2"
+                        style=" text-align: center;"
+                    >
+                        <img
+                            src="images/img_12.png"
+                            alt
+                            style="width: 150px; height: 100px;"
+                        >
+                    </div>
+                    <div
+                        class="col-md-2"
+                        style=" text-align: center;"
+                    >
+                        <img
+                            src="images/img_13.png"
+                            alt
+                            style="width: 150px; height: 100px;"
+                        >
+                    </div>
+                    <div
+                        class="col-md-2"
+                        style=" text-align: center;"
+                    >
+                        <img
+                            src="images/img_14.png"
+                            alt
+                            style="width: 150px; height: 100px;"
+                        >
+                    </div>
+                    <div
+                        class="col-md-2"
+                        style=" text-align: center;"
+                    >
+                        <img
+                            src="images/img_8.png"
+                            alt
+                            style="width: 150px; height: 100px;"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- --------------------------------- section Five ------------------------------------ -->
+
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-5 p-0">
+                    <img
+                        src="images/img_15.png"
+                        alt
+                        style="width: 100%; height: 900px;"
+                    >
+                </div>
+                <div
+                    class="col-md-5"
+                    style="background-color: #132B64;"
+                >
+                    <h4 style="font-size: 60px; margin-left: 20px; color: aliceblue;">
+                        <b style="font-size: 60px;">Industries</b>
+                        We Cater
+                    </h4>
+                    <div
+                        id="pvc-rigid-pipes"
+                        class="mt-5 m-3"
+                    >
+                        <h3 style="font-size: 25px; color: white;">PVC Rigid Pipes</h3>
+                        <p style="font-size: 16px; color: white;">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                    <div
+                        id="pvc-fittings"
+                        class="mt-5 m-3"
+                    >
+                        <h3 style="font-size: 25px; color: white;">PVC Fittings</h3>
+                        <p style="font-size: 16px; color: white;">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                    <div
+                        id="cpvc-pipes"
+                        class="mt-5 m-3"
+                    >
+                        <h3 style="font-size: 25px; color: white;">CPVC Pipes</h3>
+                        <p style="font-size: 16px; color: white;">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="btn btn-warning mt-5"
+                        style="width: 280px;
+                            height: 60px; border-radius: 30px;"
+                    >
+                        VIEW ALL INDUSTRIES
+                        <img
+                            src="images/img_50.svg"
+                            alt
+                            style="width: 25px; height: 12px;"
+                        >
+                    </button>
+                </div>
+                <div
+                    class="col-md-2"
+                    style="background-color: #132B64;"
+                >
+                    <ul style="list-style: none; cursor: pointer;">
+                        <li
+                            style="margin-top: 150px; color: white; margin-left: 20px;"
+                            id="arrow-up"
+                        >
+                            <i class="bi bi-arrow-up"></i>
+                        </li>
+                        <li
+                            style="margin-top: 50px; margin-left: 20px; color: white;"
+                            class="scroll-item"
+                            data-target="pvc-rigid-pipes"
+                        >
+                            01
+                        </li>
+                        <li
+                            style="margin-top: 50px; margin-left: 20px; color: white;"
+                            class="scroll-item"
+                            data-target="pvc-fittings"
+                        >
+                            02
+                        </li>
+                        <li
+                            style="margin-top: 50px; margin-left: 20px; color: white;"
+                            class="scroll-item"
+                            data-target="cpvc-pipes"
+                        >
+                            03
+                        </li>
+                        <li
+                            style="margin-top: 50px; margin-left: 20px; color: white;"
+                            class="scroll-item"
+                            data-target="pvc-rigid-pipes"
+                        >
+                            04
+                        </li>
+                        <li style="margin-top: 50px; margin-left: 20px; color: white;">05</li>
+                        <li
+                            style="margin-top: 50px; color: white; margin-left: 20px;"
+                            id="arrow-down"
+                        >
+                            <i class="bi bi-arrow-down"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        <!-- ---------------------------------------- section Six ------------------------------- -->
+
+
+
+
+
+
+        <div class="container mt-5">
+            <div class="row g-5">
+                <div
+                    class="col-md-4"
+                    style=" text-align: center;"
+                >
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <img
+                                src="images/img_16.png"
+                                alt
+                                style="width: 93px; height: 93px;"
+                            >
+                        </div>
+                        <div class="col-md-8 mt-4">
+                            <p style="font-size: 40px;">
+                                150 + item
+                                <span style="font-size: 16px; color: #1A3C8D;">items</span>
+                            </p>
+                            <p style="font-size: 16px;">Chemical Product</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4"
+                    style="text-align: center;"
+                >
+                    <div class="row mt-5">
+                        <div class="col-md-2">
+                            <img
+                                src="images/img_17.png"
+                                alt
+                                style="width: 93px; height: 93px;"
+                            >
+                        </div>
+                        <div class="col-md-9 mt-10">
+                            <p style="font-size: 40px;">1500 +</p>
+                            <p style="font-size: 16px;">Customer Base</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4"
+                    style="text-align: center;"
+                >
+                    <div class="row mt-5">
+                        <div class="col-md-3">
+                            <img
+                                src="images/img_18.png"
+                                alt
+                                style="width: 93px; height: 93px;"
+                            >
+                        </div>
+                        <div class="col-md-9 mt-10">
+                            <p style="font-size: 40px;">
+                                32
+                                <span style="font-size: 16px; color: #1A3C8D;">Years</span>
+                            </p>
+                            <p style="font-size: 16px;">Business Years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- -------------------------------------- section Seven ------------------------------ -->
+        <div
+            id="carouselExampleCaptions"
+            class="container carousel slide mt-5"
+        >
+            <h1 style="font-size: 60px; text-align: center;">
+                Photo
+                <b>Gallery</b>
+            </h1>
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="images/img_20.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                        style="width: 800px; height: 500px;"
+                    >
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="images/img_21.webp"
+                        class="d-block w-100"
+                        alt="..."
+                        style="width: 800px; height: 500px;"
+                    >
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="images/img_22.webp"
+                        class="d-block w-100"
+                        alt="..."
+                        style="width: 800px; height: 500px;"
+                    >
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- ------------------------------------- section Eight ---------------------------------------- -->
+        <div
+            class="mt-5 container p-5"
+            style="background-color: #0B2155;"
+        >
+            <div class="row">
+                <div class="col-md-5">
+                    <p style="font-size: 40px; text-align: center; color: white;">Let's start something</p>
+                    <h3 style="font-size: 40px; text-align: center; color: #CED600;">
+                        <b>Completely new together</b>
+                    </h3>
+                    <p style="font-size: 22px; text-align: center; color: white;">Drop us a line, and we'll get in touch.</p>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <img
+                        src="images/img_23.png"
+                        alt
+                        style="width: 300px; height: 150px; "
+                    >
+                </div>
+                <div class="col-md-1 mt-5">
+                    <button
+                        type="button"
+                        class="btn btn-warning"
+                        style="background-color: #CED600; width: 200px; height: 50px; border-radius: 30px"
+                    >
+                        Contact Us
+                        <img
+                            src="images/img_50.svg"
+                            alt
+                            style="width: 25px; height: 12px;"
+                        >
+                    </button>
+                </div>
+            </div>
+            <hr style="color: white;">
+            <div
+                class="container mt-5"
+                style="background-color: #0B2155;"
+            >
+                <div class="row">
+                    <div class="col-md-3">
+                        <img
+                            src="images/img_24.png"
+                            alt
+                            style="width: 230px; height: 50px;"
+                        >
+                        <img
+                            src="images/img_25.png"
+                            alt
+                            style="width: 280px; height: 150px; margin-top: 35px;"
+                        >
+                        <p style="color: white; margin-top: 50px;">
+                            © 2023 Nishan Multitrade. All right reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="color: #CED600; font-size: 20px; margin-left: 30px;">
+                            <b>Quick Links</b>
+                        </h3>
+                        <ul style="list-style:none; color: white;">
+                            <p>Home</p>
+                            <p>Company Profile</p>
+                            <p>Why us ?</p>
+                            <p>Products</p>
+                            <p>Industries We Cater</p>
+                            <p>Gallery</p>
+                            <p>Contact Us</p>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="color: #CED600; font-size: 20px; margin-left: 30px;">
+                            <b>Office</b>
+                        </h3>
+                        <ul style="list-style:none; color: white;">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img
+                                        src="images/img_26.png"
+                                        alt
+                                        style="width: 15px; height: 16px;"
+                                    >
+                                </div>
+                                <div class="col-md-10">
+                                    <p>
+                                        B-204, Krishna Complex Off. S.G. Highway, Bodakdev, Ahmedabad- 380054
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img
+                                        src="images/img_27.png"
+                                        alt
+                                        style="width: 15px; height: 16px;"
+                                    >
+                                </div>
+                                <div class="col-md-10">
+                                    <p>+91-79-26873501</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img
+                                        src="images/img_28.png"
+                                        alt
+                                        style="width: 15px; height: 16px;"
+                                    >
+                                </div>
+                                <div class="col-md-10">
+                                    <p>info@nishanmkt.in</p>
+                                </div>
+                            </div>
+                            <p>Terms and Condition</p>
+                            <p>Privacy Policy</p>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="col-md-3">
+                        <h3 style="color: #CED600; font-size: 20px; text-align: center; margin-right: 120px;">
+                            <b>Follow Us</b>
+                        </h3>
+                        <ul style="list-style:none; color: white;">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img
+                                        src="images/img_29.png"
+                                        alt
+                                        style="width: 15px; height: 16px;"
+                                    >
+                                </div>
+                                <div class="col-md-10">
+                                    <p>Twitter</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img
+                                        src="images/img_30.png"
+                                        alt
+                                        style="width: 15px; height: 16px;"
+                                    >
+                                </div>
+                                <div class="col-md-10">
+                                    <p>Facebook</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img
+                                        src="images/img_31.png"
+                                        alt
+                                        style="width: 15px; height: 16px;"
+                                    >
+                                </div>
+                                <div class="col-md-10">
+                                    <p>Instagram</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img
+                                        src="images/img_32.png"
+                                        alt
+                                        style="width: 15px; height: 16px;"
+                                    >
+                                </div>
+                                <div class="col-md-10">
+                                    <p>LinkedIn</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script>
             $(document).ready(function () {
-            $('#myCarousel').carousel({
-                interval: 100000,
-            });
+                $('#myCarousel').carousel({
+                    interval: 100000,
+                });
 
-            $('.carousel .carousel-item').each(function () {
-                var minPerSlide = 3; // Corrected value
-                var next = $(this).next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-                next.children(':first-child').clone().appendTo($(this));
-
-                for (var i = 0; i < minPerSlide; i++) {
-                    next = next.next();
+                $('.carousel .carousel-item').each(function () {
+                    var minPerSlide = 3; // Corrected value
+                    var next = $(this).next();
                     if (!next.length) {
                         next = $(this).siblings(':first');
                     }
-
                     next.children(':first-child').clone().appendTo($(this));
-                }
+
+                    for (var i = 0; i < minPerSlide; i++) {
+                        next = next.next();
+                        if (!next.length) {
+                            next = $(this).siblings(':first');
+                        }
+
+                        next.children(':first-child').clone().appendTo($(this));
+                    }
+                });
             });
-        });
 
-        $('#dark-mode-toggle').on('click', function() {
-            // Toggle dark mode class on the body
-            $('body').toggleClass('dark-mode');
+        
 
-            // Save the user's preference in localStorage
-            var isDarkMode = $('body').hasClass('dark-mode');
-            localStorage.setItem('dark-mode', isDarkMode);
-        });
+            $(document).ready(function() {
+    // Initial setup based on the current mode
+    updateDarkModeIcons();
 
-        // Check user's preference from localStorage
-        var isDarkMode = localStorage.getItem('dark-mode') === 'true';
-        if (isDarkMode) {
-            $('body').addClass('dark-mode');
+    // Toggle dark mode on button click
+    $("#dark-mode-toggle").click(function() {
+        $("body").toggleClass("dark-mode");
+        updateDarkModeIcons();
+    });
+
+    // Function to update the visibility of moon and sun icons
+    function updateDarkModeIcons() {
+        const isDarkMode = $("body").hasClass("dark-mode");
+        $("#moon-icon").toggle(!isDarkMode);
+        $("#sun-icon").toggle(isDarkMode);
+    }
+    });
+
+            $(document).ready(function () {
+                // Adjust the width of each carousel item based on the window width
+                function adjustCarouselItemWidth() {
+                    var windowWidth = $(window).width();
+                    $('.carousel-item').width(windowWidth);
+                }
+
+                // Call the function on document ready
+                adjustCarouselItemWidth();
+
+                // Call the function on window resize
+                $(window).resize(function () {
+                    adjustCarouselItemWidth();
+                });
+
+                $(".carousel").carousel({
+                    interval: 3000
+                });
+
+                // Scroll slides on swipe for touch-enabled devices
+                $(".carousel").on("touchstart", function (event) {
+                    var yClick = event.originalEvent.touches[0].pageY;
+                    $(this).one("touchmove", function (event) {
+                        var yMove = event.originalEvent.touches[0].pageY;
+                        if (Math.floor(yClick - yMove) > 1) {
+                            $(".carousel").carousel("next");
+                        } else if (Math.floor(yClick - yMove) < -1) {
+                            $(".carousel").carousel("prev");
+                        }
+                    });
+                    $(".carousel").on("touchend", function () {
+                        $(this).off("touchmove");
+                    });
+                });
+            });
+
+
+
+
+
+            $(document).ready(function () {
+        // Initial active section index
+        let activeIndex = 0;
+
+        // Function to highlight the section and remove highlight from others
+        function highlightSection(target) {
+            $('.scroll-item').removeClass('active');
+            $('.scroll-item[data-target="' + target + '"]').addClass('active');
+            $('.col-md-5 div').removeClass('active-section');
+            $('#' + target).addClass('active-section');
         }
+
+        // Click event for arrow-up
+        $('#arrow-up').click(function () {
+            if (activeIndex > 0) {
+                activeIndex--;
+                let target = $('.scroll-item').eq(activeIndex).data('target');
+                highlightSection(target);
+            }
+        });
+
+        // Click event for arrow-down
+        $('#arrow-down').click(function () {
+            if (activeIndex < $('.scroll-item').length - 1) {
+                activeIndex++;
+                let target = $('.scroll-item').eq(activeIndex).data('target');
+                highlightSection(target);
+            }
+        });
+
+        // Click event for numbered buttons
+        $('.scroll-item').click(function () {
+            let target = $(this).data('target');
+            highlightSection(target);
+            // Update the active index
+            activeIndex = $(this).index();
+        });
+    });
         </script>
     </body>
 </html>
