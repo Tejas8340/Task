@@ -140,9 +140,9 @@ body.dark-mode .dropdown-item:focus {
 
 
 .card {
-  width: 90%;
+  width: 100%;
   /* Set the width of your card */
-  margin: 0 10px;
+  margin: 0;
   padding: 15px;
   height: 700px;
   /* Set the height of your card */
@@ -178,7 +178,6 @@ body.dark-mode .dropdown-item:focus {
 .section-one {
   background-image: url(images/img_2.png);
   margin: 0px 10px;
-  width: 800px;
   height: 200px;
   display: flex;
   align-items: center;
